@@ -1,8 +1,8 @@
 <# 
-Add two useful functions to $PROFILE
-1. CheckAdmin - Checks if the current script is run by an administrative user
-2. NewAdminWindow - Opens a new Admin-level Windows terminal
-    * Adds an Alias 'Admin' That will create a new Admin Window
+Add two useful functions to $PROFILE:
+    <br/> 1. CheckAdmin - Checks if the current script is run by an administrative user
+    <br/> 2. NewAdminWindow - Opens a new Admin-level Windows terminal
+    <br/> Sets an Alias 'Admin' That will create a new Admin Window
 #>
 
 $adminScript = @'
