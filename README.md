@@ -2,7 +2,7 @@
  * basic-commands-note.ps1
     *  Listing of basic commands to review 
  * lab-1.ps1
-    *  Lab 1: Create a text file that contains the names of the files and folders in C:\Windows (don't worry about including subdirectories- that would  take too long). Name the text file MyDir.txt)
+    *  Lab 1: Create a text file that contains the names of the files and folders in C:\Windows
 ### Chapter 2\: 
 ### Chapter 3\: 
 ### Chapter 4\: 
