@@ -1,5 +1,5 @@
 <#
-Exercises from "Learn Windows PowerShell In A Month Of Lunches
+Generates the README.md file based on header comments within each Chapter Folder.
 #>
 
 $global:MyReadme = ""
