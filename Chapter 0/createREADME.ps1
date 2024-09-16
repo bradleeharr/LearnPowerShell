@@ -1,5 +1,5 @@
 <#
-Exercises from "Learn Windows PowerShell In A Month Of Lunches
+Generates the README.md file based on header comments within each Chapter Folder.
 #>
 
 $global:MyReadme = ""
@@ -8,6 +8,7 @@ function AddLog ($string) {
 }
 
 $titles = @{
+    0="Personal Scripts"
     1="Getting Started";
     2="";
     3="";
@@ -15,22 +16,21 @@ $titles = @{
 }
 
 $pwd = pwd
-$N_CHAPTERS = 26
-for ($i = 1; $i -lt $N_CHAPTERS; $i++) {
+$N_CHAPTERS = 3
+for ($i = 0; $i -lt $N_CHAPTERS; $i++) {
 
     $title = $titles[$i]
     AddLog "### Chapter $i\: $title"
 
-    $chapter_dir = "$pwd\Chapter $i"
+    $chapter_dir = "$pwd\..\Chapter $i"
     if (Test-Path $chapter_dir) {
         Write-Host $chapter_dir
-        Pause
         foreach ($name in dir $chapter_dir -Name) {
             AddLog " * $name"
             $fileContent = Get-Content "$chapter_dir\$name" -Raw
             $description = $fileContent -replace "`r`n", " " 
-            $description = $description -replace ".*<#", "" 
-            $description = $description -replace "#>.*", "" 
+            $description = $description -replace '[ ]*<#', "" 
+            $description = $description -replace '#>.*', "" 
             Write-Host $description
             AddLog "    * $description"
         }
