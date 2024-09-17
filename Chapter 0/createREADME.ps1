@@ -11,12 +11,12 @@ $titles = @{
     0="Personal Scripts"
     1="Getting Started";
     2="";
-    3="";
+    3="Using the Help System";
     4="";
 }
 
 $pwd = pwd
-$N_CHAPTERS = 3
+$N_CHAPTERS = $titles.count
 for ($i = 0; $i -lt $N_CHAPTERS; $i++) {
 
     $title = $titles[$i]
