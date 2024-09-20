@@ -12,3 +12,7 @@ Update-Help
 
 Help *Event*
 Help *Object*
+
+<# Help can provide examples too #> 
+# e.g. 
+Help Get-Item -Example
