@@ -14,7 +14,8 @@
 ### Chapter 3\: Using the Help System
  * lab-3.ps1
     *  Powershell "Help" <br> Powershell comes with built-in help utilities.     Commands like Help *Event* or Help *Object*      are useful for searching and learning new commands     and functionalities that PowerShell offers. <br> Running Help on a specific command, like Help Write-Host     provides a synopsis, useage examples, and syntax for calling that command.  
-### Chapter 4\: 
+### Chapter 4\: Running Commands
+
 ### Personal Scripts
 * createREADME.ps1
 * elevate-to-admin.ps1
